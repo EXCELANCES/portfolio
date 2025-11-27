@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ertugrul Asliyuce | Data Analyst Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Ertugrul Asliyuce, Data Analyst and Master Data Specialist based in Dublin, Ireland.">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 24px;
+      border-radius: 16px;
+      background: radial-gradient(circle at top left, #1e293b, #020617);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+      margin-bottom: 32px;
+    }
+
+    .hero-main {
+      flex: 1 1 260px;
+    }
+
+    .hero-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: #a5b4fc;
+      margin-bottom: 8px;
+    }
+
+    .hero-location {
+      font-size: 0.9rem;
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+
+    .hero-summary {
+      font-size: 0.95rem;
+      color: #e5e7eb;
+      max-width: 540px;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      font-size: 0.88rem;
+    }
+
+    .tag {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #4b5563;
+      font-size: 0.75rem;
+      color: #d1d5db;
+    }
+
+    .pill-link {
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #111827;
+      border: 1px solid #374151;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .pill-link span.icon {
+      font-size: 0.9rem;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .section {
+      margin-bottom: 24px;
+      background: #020617;
+      border-radius: 16px;
+      padding: 20px 18px;
+      border: 1px solid #1f2933;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 14px;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.78rem;
+    }
+
+    .badge {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #020617;
+      border: 1px solid #374151;
+      color: #e5e7eb;
+      white-space: nowrap;
+    }
+
+    .exp-item {
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #111827;
+    }
+
+    .exp-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .exp-role {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .exp-company {
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+    .exp-date {
+      font-size: 0.82rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+
+    .exp-location {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-bottom: 6px;
+    }
+
+    .exp-list {
+      list-style: disc;
+      padding-left: 18px;
+      font-size: 0.86rem;
+      color: #e5e7eb;
+    }
+
+    .exp-list li + li {
+      margin-top: 4px;
+    }
+
+    .edu-item {
+      font-size: 0.88rem;
+      margin-bottom: 10px;
+    }
+
+    .edu-degree {
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .edu-school {
+      color: #9ca3af;
+      font-size: 0.85rem;
+    }
+
+    .edu-year {
+      color: #6b7280;
+      font-size: 0.8rem;
+    }
+
+    .contact-list {
+      font-size: 0.86rem;
+      display: grid;
+      gap: 6px;
+    }
+
+    .contact-label {
+      color: #9ca3af;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .projects-note {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-bottom: 8px;
+    }
+
+    .project-card {
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px dashed #374151;
+      font-size: 0.85rem;
+      color: #e5e7eb;
+    }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+
+    .project-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+    }
+
+    .project-meta {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-bottom: 6px;
+    }
+
+    .project-tech {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-top: 6px;
+    }
+
+    .project-link-row {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.8rem;
+    }
+
+    .project-link-btn {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #374151;
+      background: #020617;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .project-link-btn:hover {
+      text-decoration: none;
+      border-color: #4b5563;
+    }
+
+   #preloader {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at top, #020617, #020617 40%, #000000 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    #preloader.hide {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .preloader-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .preloader-logo {
+      width: 96px;
+      height: auto;
+      opacity: 0;
+      transform: scale(0);
+      animation: logo-pop 0.8s ease forwards;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes logo-pop {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.08);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .preloader-words {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #e5e7eb;
+    }
+
+    .preloader-words .word {
+      display: block;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+
+    .preloader-words .word.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+
+  </style>
+</head>
+<body>
+    
+
+  <div id="preloader">
+    <div class="preloader-inner">
+      <!-- Logo merkezden büyüyecek -->
+      <img src="C:\Users\ertua\OneDrive\Masaüstü\Python-HtmlCss\portfolio website\logo2.png" alt="Logo" class="preloader-logo">
+
+      <!-- Kelimeler sırayla görünecek -->
+      <div class="preloader-words">
+        <span class="word word-1">Analysis</span>
+        <span class="word word-2">Accuracy</span>
+        <span class="word word-3">Impact</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <header>
+      <div class="hero-main">
+        <h1 class="hero-title">Ertugrul Asliyuce</h1>
+        <h2 class="hero-subtitle">Data Analyst | Master Data Specialist | BI Developer</h2>
+        <p class="hero-location">Dublin, Ireland</p>
+        <p class="hero-summary">
+          Results driven Data Analyst and Master Data Specialist with experience in automating reporting, improving data quality, and managing operational datasets. Strong skills in SQL, Python, VBA, Access, and Power BI with a focus on creating automated workflows, ETL processes, and actionable insights for senior management.
+        </p>
+      </div>
+      <div>
+        <div class="hero-links" style="margin-bottom: 10px;">
+          <span class="tag">Open to Data Analyst and BI roles</span>
+        </div>
+        <div class="hero-links">
+          <a class="pill-link" href="mailto:ertuasliyuce@gmail.com">
+            <span class="icon">✉️</span><span>Email</span>
+          </a>
+
+          <a class="pill-link" href="https://linkedin.com/in/ertuasliyce" target="_blank" rel="noopener">
+            <span class="icon">🔗</span><span>LinkedIn</span>
+          </a>
+          <a class="pill-link" href="https://github.com/EXCELANCES" target="_blank" rel="noopener">
+            <span class="icon">💻</span><span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="section">
+          <h3 class="section-title">Core Skills</h3>
+          <div class="badge-row">
+            <span class="badge">Python</span>
+            <span class="badge">SQL</span>
+            <span class="badge">VBA</span>
+            <span class="badge">Access</span>
+            <span class="badge">Power BI</span>
+            <span class="badge">Tableau</span>
+            <span class="badge">SSRS</span>
+            <span class="badge">Power Query</span>
+            <span class="badge">ETL pipelines</span>
+            <span class="badge">Data modelling</span>
+            <span class="badge">Master data management</span>
+            <span class="badge">Data quality</span>
+            <span class="badge">KPI reporting</span>
+            <span class="badge">SAP</span>
+            <span class="badge">Oracle</span>
+            <span class="badge">JIRA</span>
+            <span class="badge">HTML</span>
+            <span class="badge">JS</span>
+            <span class="badge">CSS</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="section-title">Experience</h3>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Business Intelligence Analyst and Master Data Analyst</div>
+                <div class="exp-company">MAN Truck and Bus</div>
+              </div>
+              <div class="exp-date">Aug 2021 - Sep 2024</div>
+            </div>
+            <div class="exp-location">Master data, reporting automation, and KPI development</div>
+            <ul class="exp-list">
+              <li>Managed master data for bus components and inventory datasets with a focus on accuracy and data quality validation.</li>
+              <li>Automated data entry, validation, and reporting workflows using Access, VBA, Python, and Attachmate Extra macros.</li>
+              <li>Built an automated annual unused parts detection system to support spare parts planning.</li>
+              <li>Developed SQL queries to extract and analyse operational and component level data for maintenance and planning.</li>
+              <li>Produced monthly KPI reports highlighting operational issues and shared insights with senior management.</li>
+              <li>Designed Power BI dashboards and Tableau reports to improve visibility of trends and operational risks.</li>
+              <li>Improved reporting efficiency through ETL development and automated audit controls.</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">BI Systems Consultant</div>
+                <div class="exp-company">Freelancer</div>
+              </div>
+              <div class="exp-date">Aug 2019 - Aug 2021</div>
+            </div>
+            <div class="exp-location">Analytics solutions and reporting automation</div>
+            <ul class="exp-list">
+              <li>Built Access based reporting and data collection applications to automate daily operations.</li>
+              <li>Developed Python applications for workflow automation and reporting.</li>
+              <li>Created dashboards using Power BI and Tableau to support the transition from manual reports to BI systems.</li>
+              <li>Designed inventory databases to support process standardisation and accuracy.</li>
+              <li>Delivered training on analytics and dashboard usage to business users.</li>
+            </ul>
+          </div>
+        </div>
+
+         <div class="section">
+          <h3 class="section-title">Projects</h3>
+
+          <div class="project-card">
+            <div class="project-title">LAPD Crime Data Warehouse and BI Reports</div>
+            <div class="project-meta">ETL, star schema, SSRS and Tableau dashboards</div>
+            <p>
+              Designed and implemented a crime data warehouse using a star schema to analyse crime trends, victim demographics and location based patterns. Built ETL workflows with SSIS to clean and integrate multiple data sources and developed SSRS and Tableau reports for year over year comparisons, heatmaps and operational KPIs.
+            </p>
+            <div class="project-tech">
+              Tech: SQL, SSIS, SSRS, Tableau, Excel, Data modelling
+            </div>
+            <div class="project-link-row">
+              <a class="project-link-btn" href="https://github.com/EXCELANCES/LAPD_Crime_Analysis" target="_blank" rel="noopener">
+                <span>🔗</span><span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" style="margin-top:10px;">
+            <div class="project-title">AI Nutrition Assistant Chatbot</div>
+            <div class="project-meta">RAG based personalised diet assistant</div>
+            <p>
+              Built a full stack AI nutrition assistant that generates personalised meal plans and recipe recommendations using a fine tuned language model. Integrated a FAISS based retrieval layer over USDA and OpenFoodFacts data and implemented a Flask API with a web frontend for chat, profile management and feedback logging.
+            </p>
+            <div class="project-tech">
+              Tech: Python, Flask, SQLite, FAISS, Hugging Face, HTML, CSS, JavaScript
+            </div>
+            <div class="project-link-row">
+              <a class="project-link-btn" href="https://github.com/EXCELANCES/AI-Powered-Nutritionist" target="_blank" rel="noopener">
+                <span>💻</span><span>Source code</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" style="margin-top:10px;">
+            <div class="project-title">Traffic Violation Data Visualization on Tableau and Power BI</div>
+            <div class="project-meta">Comparison of Visualisation Tools</div>
+            <p>
+              This project explores and compares the capabilities of Tableau and Power BI in visualizing a multi-dimensional traffic violation dataset.
+            </p>
+            <div class="project-tech">
+              Tech: Python, Reporting, Data Visualisation, Tableau, Power BI
+            </div>
+            <div class="project-link-row">
+              <a class="project-link-btn" href="https://github.com/EXCELANCES/Traffic_Violation_Data_Visualization" target="_blank" rel="noopener">
+                <span>📊</span><span>Project materials</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" style="margin-top:10px;">
+            <div class="project-title">Inventory and KPI Automation for MAN Truck and Bus</div>
+            <div class="project-meta">Operational reporting and master data automation</div>
+            <p>
+              Designed Access and Excel based applications with VBA and Python scripts to automate spare parts reporting, unused parts detection and monthly KPI packs. Reduced manual workload, improved data quality and provided management with repeatable and auditable dashboards.
+            </p>
+            <div class="project-tech">
+              Tech: Access, VBA, Python, SQL, Excel, Power BI
+            </div>
+            <div class="project-link-row">
+              <a class="project-link-btn" href="#">
+                <span>📁</span><span>Internal project (no public repo)</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" style="margin-top:10px;">
+            <div class="project-title">Credit Card Fraud Detection</div>
+            <div class="project-meta">Data Science on Fradu Detection</div>
+            <p>
+             This project is focused on detecting fraudulent credit card transactions using machine learning classification models. It demonstrates the full workflow from data preprocessing to model evaluation on a highly imbalanced dataset.
+            </p>
+            <div class="project-tech">
+              Tech: Python (Jupyter Notebook), Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn (Logistic Regression, Random Forest),XGBoost (optional), Git LFS (for large dataset handling)
+            </div>
+            <div class="project-link-row">
+              <a class="project-link-btn" href="https://github.com/EXCELANCES/creditcard_fraud_detection" target="_blank" rel="noopener">
+                <span>🔗</span><span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <aside>
+        <div class="section">
+          <h3 class="section-title">Education</h3>
+          <div class="edu-item">
+            <div class="edu-degree">MSc in Data Analytics</div>
+            <div class="edu-school">Dublin Business School</div>
+            <div class="edu-year">2025</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-degree">BSc in Industrial Engineering</div>
+            <div class="edu-school">Baskent University</div>
+            <div class="edu-year">2020</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="section-title">Contact</h3>
+          <div class="contact-list">
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:ertuasliyuce@gmail.com">ertuasliyuce@gmail.com</a>
+            </div>
+            <div>
+              <div class="contact-label">Location</div>
+              <span>Dublin, Ireland</span>
+            </div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <a href="https://linkedin.com/in/ertuaslyc" target="_blank" rel="noopener">
+                linkedin.com/in/ertuaslyc
+              </a>
+            </div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <a href="https://github.com/EXCELANCES" target="_blank" rel="noopener">
+                github.com/EXCELANCES
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Ertugrul Asliyuce. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Footer yıl
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Preloader kontrolü
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      const words = document.querySelectorAll(".preloader-words .word");
+
+      if (!preloader) return;
+
+      // Kelimeleri sırayla göster
+      words.forEach(function (word, index) {
+        setTimeout(function () {
+          word.classList.add("show");
+        }, 900 + index * 600); // logo bittikten sonra sırayla
+      });
+
+      // Son kelime göründükten sonra preloaderı kaldır
+      const totalDelay = 900 + (words.length - 1) * 600 + 700;
+      setTimeout(function () {
+        preloader.classList.add("hide");
+      }, totalDelay);
+    });
+  </script>
+</body>
+</html>
+
