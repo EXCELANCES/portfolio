@@ -2,7 +2,7 @@
 
 Source for my personal site: **https://excelances.github.io/portfolio/**
 
-Data & Automation Engineer based in Ireland. I build data tools that don't just report, they act: API and ERP data pipelines, Flask apps, Power BI reports and process automations.
+Data & Automation Engineer in Dublin. SQL, Python/Flask, Power BI, ERP data and process automation.
 
 - Single static page (`index.html`), no build step, served by GitHub Pages
 - `assets/` holds the logo, social preview image and short screen recordings of tools I built at MAN Truck & Bus
