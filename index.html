@@ -4,32 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ertugrul Asliyuce · Data & Automation Engineer</title>
-  <meta name="description" content="I build data tools that don't just report, they act. APIs, SQL, Python/Flask, Power BI and process automation. Based in Ireland.">
+  <meta name="description" content="Data & Automation Engineer in Ireland. I turn business data into practical tools: APIs, SQL, Python/Flask, Power BI and process automation.">
   <link rel="canonical" href="https://excelances.github.io/portfolio/">
   <link rel="icon" href="assets/logo.png" type="image/png">
   <meta property="og:title" content="Ertugrul Asliyuce · Data & Automation Engineer">
-  <meta property="og:description" content="Data tools that don't just report, they act. APIs, SQL, Python/Flask, Power BI, process automation.">
+  <meta property="og:description" content="I turn business data into practical tools and automations. APIs, SQL, Python/Flask, Power BI.">
   <meta property="og:image" content="https://excelances.github.io/portfolio/assets/og-image.png">
   <meta property="og:url" content="https://excelances.github.io/portfolio/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #f6f5f1;
       --surface: #ffffff;
       --ink: #16181b;
-      --muted: #5c626b;
+      --muted: #4b5159;
       --faint: #8a9099;
       --line: #e3e1da;
       --accent: #0f766e;
       --accent-soft: #e3f1ee;
       --shadow: 0 1px 2px rgba(20, 22, 26, .04), 0 8px 24px rgba(20, 22, 26, .05);
-      --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+      --serif: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
       --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-      --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+      --mono: "Inter", system-ui, sans-serif;
       color-scheme: light;
     }
     @media (prefers-color-scheme: dark) {
@@ -54,13 +54,13 @@
       font-family: var(--sans);
       background: var(--bg);
       color: var(--ink);
-      line-height: 1.6;
-      font-size: 16px;
+      line-height: 1.7;
+      font-size: 17px;
       -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; }
     img, video { display: block; max-width: 100%; }
-    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
     :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
 
     /* Top bar */
@@ -82,18 +82,18 @@
     /* Hero */
     .hero { padding: 72px 0 40px; }
     .eyebrow {
-      font-family: var(--mono); font-size: 12.5px; letter-spacing: .04em;
-      color: var(--accent); text-transform: uppercase; margin-bottom: 18px;
+      font-family: var(--sans); font-size: 15px; font-weight: 500;
+      color: var(--accent); margin-bottom: 16px;
       display: flex; align-items: center; gap: 10px;
     }
     .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
     h1 {
-      font-family: var(--serif); font-weight: 400;
-      font-size: clamp(40px, 6.4vw, 72px); line-height: 1.02; letter-spacing: -0.01em;
-      max-width: 14ch;
+      font-family: var(--serif); font-weight: 600;
+      font-size: clamp(30px, 4vw, 46px); line-height: 1.2; letter-spacing: -0.02em;
+      max-width: 22ch;
     }
-    h1 em { color: var(--accent); }
-    .lede { margin-top: 22px; font-size: 18px; color: var(--muted); max-width: 58ch; }
+    h1 em { color: var(--accent); font-style: normal; }
+    .lede { margin-top: 20px; font-size: 19px; color: var(--muted); max-width: 64ch; }
     .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
@@ -112,8 +112,8 @@
     }
     .stat { padding: 22px 20px 22px 0; }
     .stat + .stat { padding-left: 20px; border-left: 1px solid var(--line); }
-    .stat b { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(26px, 2.7vw, 36px); line-height: 1.15; white-space: nowrap; }
-    .stat span { font-size: 13.5px; color: var(--muted); }
+    .stat b { display: block; font-family: var(--serif); font-weight: 700; font-size: clamp(22px, 2.3vw, 30px); line-height: 1.25; white-space: nowrap; letter-spacing: -0.01em; }
+    .stat span { font-size: 15px; line-height: 1.5; color: var(--muted); display: block; margin-top: 4px; }
     @media (max-width: 760px) {
       .stats { grid-template-columns: 1fr 1fr; }
       .stat b { font-size: 23px; }
@@ -126,9 +126,9 @@
     /* Sections */
     section { padding: 72px 0 8px; }
     .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
-    h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 4vw, 40px); line-height: 1.1; }
-    .sec-note { color: var(--muted); font-size: 15px; max-width: 46ch; }
-    .label { font-family: var(--mono); font-size: 12px; color: var(--faint); text-transform: uppercase; letter-spacing: .05em; }
+    h2 { font-family: var(--serif); font-weight: 700; font-size: clamp(24px, 3vw, 32px); line-height: 1.2; letter-spacing: -0.015em; }
+    .sec-note { color: var(--muted); font-size: 16px; max-width: 52ch; }
+    .label { font-size: 13.5px; font-weight: 500; color: var(--faint); }
 
     /* Services */
     .services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
@@ -138,9 +138,9 @@
       background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
       padding: 22px; box-shadow: var(--shadow);
     }
-    .card h3 { font-size: 16px; font-weight: 600; margin: 10px 0 6px; }
-    .card p { font-size: 14.5px; color: var(--muted); }
-    .num { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+    .card h3 { font-size: 17.5px; font-weight: 600; margin: 10px 0 6px; }
+    .card p { font-size: 15.5px; color: var(--muted); }
+    .num { font-size: 13.5px; font-weight: 600; color: var(--accent); }
 
     /* Demos */
     .demos { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
@@ -148,10 +148,10 @@
     .demo { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); }
     .demo video { width: 100%; aspect-ratio: 16 / 9; background: #0b0c0e; object-fit: cover; }
     .demo-body { padding: 18px 20px 20px; }
-    .demo-body h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
-    .demo-body p { font-size: 14.5px; color: var(--muted); }
+    .demo-body h3 { font-size: 17.5px; font-weight: 600; margin-bottom: 4px; }
+    .demo-body p { font-size: 15.5px; color: var(--muted); }
     .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
-    .tag { font-family: var(--mono); font-size: 11.5px; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+    .tag { font-size: 13px; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
 
     /* Projects */
     .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
@@ -173,22 +173,22 @@
     .xp { border-top: 1px solid var(--line); }
     .xp-row { display: grid; grid-template-columns: 200px 1fr; gap: 24px; padding: 26px 0; border-bottom: 1px solid var(--line); }
     @media (max-width: 680px) { .xp-row { grid-template-columns: 1fr; gap: 6px; } }
-    .xp-when { font-family: var(--mono); font-size: 12.5px; color: var(--faint); padding-top: 3px; }
+    .xp-when { font-size: 14.5px; color: var(--faint); padding-top: 3px; }
     .xp-role { font-size: 17px; font-weight: 600; }
     .xp-org { color: var(--muted); font-size: 15px; margin-bottom: 10px; }
     .xp ul { list-style: none; display: grid; gap: 6px; }
-    .xp li { position: relative; padding-left: 18px; font-size: 15px; }
+    .xp li { position: relative; padding-left: 18px; font-size: 16px; }
     .xp li::before { content: ""; position: absolute; left: 0; top: .72em; width: 8px; height: 1px; background: var(--accent); }
 
     /* Two-col bottom */
     .split { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     @media (max-width: 780px) { .split { grid-template-columns: 1fr; } }
     .edu-item + .edu-item { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
-    .edu-item b { display: block; font-size: 15px; font-weight: 600; }
-    .edu-item span { color: var(--muted); font-size: 14px; }
+    .edu-item b { display: block; font-size: 16px; font-weight: 600; }
+    .edu-item span { color: var(--muted); font-size: 15px; }
     .tool-group + .tool-group { margin-top: 14px; }
     .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
-    .chip { font-size: 13px; padding: 4px 10px; border-radius: 8px; border: 1px solid var(--line); }
+    .chip { font-size: 14px; padding: 4px 10px; border-radius: 8px; border: 1px solid var(--line); }
 
     /* Contact */
     .contact { padding: 88px 0 72px; }
@@ -196,7 +196,7 @@
       background: var(--ink); color: var(--bg); border-radius: 20px;
       padding: clamp(28px, 5vw, 56px); display: grid; gap: 22px;
     }
-    .contact-box h2 { max-width: 18ch; }
+    .contact-box h2 { max-width: 26ch; }
     .contact-box p { opacity: .75; max-width: 52ch; }
     .contact-box .btn { background: transparent; color: var(--bg); border-color: color-mix(in srgb, var(--bg) 35%, transparent); }
     .contact-box .btn:hover { border-color: var(--bg); }
@@ -227,10 +227,10 @@
       <!-- Hero -->
       <div class="hero">
         <p class="eyebrow">Data &amp; Automation Engineer · Ireland</p>
-        <h1>I build data tools that don't just report. <em>They act.</em></h1>
+        <h1>Hi, I'm Ertugrul. I help teams turn their data into <em>practical tools</em> they use every day.</h1>
         <p class="lede">
-          I pull data from APIs, ERPs and databases, then turn it into apps, reports and automations people actually use.
-          Industrial engineer by training, so I start with the process, not the tool.
+          Most of my work is pulling data from APIs, ERPs and databases and turning it into small apps, reports and automations.
+          I studied industrial engineering, so I like to understand the process first and then pick the right tool.
         </p>
         <div class="cta">
           <a class="btn primary" href="mailto:ertuasliyuce@gmail.com">
@@ -259,7 +259,7 @@
       <section id="what" aria-labelledby="what-h">
         <div class="sec-head">
           <h2 id="what-h">What I can help with</h2>
-          <p class="sec-note">Most companies don't need more dashboards. They need the data to move and the boring checks to run themselves.</p>
+          <p class="sec-note">The kind of work I've done most and enjoy doing.</p>
         </div>
         <div class="services">
           <div class="card">
@@ -288,8 +288,8 @@
       <!-- Demos -->
       <section id="work" aria-labelledby="work-h">
         <div class="sec-head">
-          <h2 id="work-h">Real tools, in use</h2>
-          <p class="sec-note">Two internal tools I built at MAN Truck &amp; Bus. Short screen recordings, no sound.</p>
+          <h2 id="work-h">A few tools I built</h2>
+          <p class="sec-note">Two internal tools from my time at MAN Truck &amp; Bus. Short screen recordings, no sound.</p>
         </div>
         <div class="demos">
           <article class="demo">
@@ -411,7 +411,7 @@
       <section aria-labelledby="edu-h">
         <div class="split">
           <div class="card">
-            <h2 id="edu-h" style="font-size:28px;margin-bottom:18px">Education</h2>
+            <h2 id="edu-h" style="font-size:24px;margin-bottom:18px">Education</h2>
             <div class="edu-item">
               <b>PgDip Innovation Management</b>
               <span>Queen's University Belfast · 2026 – 2027 · InterTradeIreland scholarship</span>
@@ -426,7 +426,7 @@
             </div>
           </div>
           <div class="card">
-            <h2 style="font-size:28px;margin-bottom:18px">Toolbox</h2>
+            <h2 style="font-size:24px;margin-bottom:18px">Toolbox</h2>
             <div class="tool-group">
               <span class="label">Data</span>
               <div class="chips"><span class="chip">SQL Server</span><span class="chip">Oracle</span><span class="chip">SSIS</span><span class="chip">SSRS</span><span class="chip">SQLite</span></div>
@@ -454,8 +454,8 @@
       <!-- Contact -->
       <section id="contact" class="contact" aria-labelledby="contact-h">
         <div class="contact-box">
-          <h2 id="contact-h">Got a messy process or a data problem?</h2>
-          <p>Tell me what's slow, manual or breaking. I'll tell you honestly whether data and automation can fix it.</p>
+          <h2 id="contact-h">Happy to chat</h2>
+          <p>If you're working on something where data or automation could help, I'd be glad to hear about it.</p>
           <div class="cta" style="margin-top:0">
             <a class="btn primary" href="mailto:ertuasliyuce@gmail.com">ertuasliyuce@gmail.com</a>
             <a class="btn" href="https://www.linkedin.com/in/ertuaslyc" target="_blank" rel="noopener">LinkedIn</a>
